@@ -14,6 +14,11 @@ variable "description" {
   type        = string
   default     = "" # Optional, in case you want to have a default empty description.
 }
+variable "additional_members" {
+  description = "List of additional member object IDs to add to the Azure AD group."
+  type        = list(string)
+  default     = [] # By default, no additional members
+}
 #============================================= LOGIC
 
 variable "create" {
