@@ -5,10 +5,10 @@ variable "display_name" {
   type        = string
 }
 
-variable "service_principal_id" {
-  description = "The Object ID of the service principal to be added as a member and owner."
-  type        = string
-}
+# variable "service_principal_id" {
+#   description = "The Object ID of the service principal to be added as a member and owner."
+#   type        = string
+# }
 variable "description" {
   description = "The description for the Azure AD group."
   type        = string
